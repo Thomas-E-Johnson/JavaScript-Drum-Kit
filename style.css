@@ -1,7 +1,8 @@
 html {
-  font-size: 12px;
-  background-image: url("background-image.jpg");
+  font-size: 14px;
+  background-image: url("background-image2.jpg");
   background-size: cover;
+  background-position: bottom;
 }
 body,html {
   margin: 0;
@@ -17,16 +18,24 @@ body,html {
   justify-content: center;
 }
 .key {
-  border: .4rem solid black;
+  border: .4rem solid white;
   border-radius: .5rem;
   margin: 1rem;
   font-size: 1.5rem;
   padding: 1rem .5rem;
-  width: 11rem;
+  transition: all 0.2s ease;
+  width: 10rem;
   text-align: center;
   color: white;
   background: rgba(0,0,0,0.4);
-  text-shadow: 0 0 .5rem black;
+  text-shadow: 0 0 .5rem rgb(213, 28, 28);
+  cursor: pointer;
+}
+.playing {
+  transform: scale(1.2);
+  border-color: rgb(213, 28, 28);
+  box-shadow: 0 0 1rem rgb(159, 40, 29);
+  color: rgb(213, 28, 28);
 }
 kbd {
   display: block;
@@ -35,4 +44,5 @@ kbd {
 .sound {
   font-size: 1.2rem;
   letter-spacing: .1rem;
+  color: rgb(245, 141, 141);
 }
